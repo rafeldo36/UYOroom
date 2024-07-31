@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
     const [credentials, setCredentials] = useState({ name: "", email: "", password: "", cpassword: "" })
@@ -78,7 +78,7 @@ const SignUp = () => {
                 <button className="btn btn-primary">Sign Up</button>
             </div>
             <p className="forgot-password text-right">
-                Already registered <a href="/sign-in">sign in?</a>
+                Already registered <Link to="/sign-in">sign in?</Link>
             </p>
         </form>
     )

@@ -20,13 +20,13 @@ export default function App() {
         <div className='Appe'>
           <nav className="navbar navbar-expand-lg navbar-light fixed-top">
             <div className="container">
-              <Link className="navbar-brand" to='/home'>
+              <Link className="navbar-brand" to='/'>
                 UYO ROOMS
               </Link>
               <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                    <Link className="nav-link" to='/home'>
+                    <Link className="nav-link" to='/'>
                       Home
                     </Link>
                   </li>
@@ -46,7 +46,7 @@ export default function App() {
             <div className="auth-inner">
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
+                {/* <Route path="/home" element={<Home />} /> */}
                 <Route path="/homepage" element={<Homepage />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/sign-in" element={<Login />} />
